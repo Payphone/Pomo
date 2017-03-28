@@ -1,0 +1,39 @@
+* Pomo
+A StumpWM module for keeping track of Pomodoro sessions
+
+** Installation
+Clone the repository and move it to your StumpWM modules folder. The modules
+folder has changed several times throughout the StumpWM releases, so the best
+way to find it is to eval `*module-dir*` in StumpWM (C-t :).
+#+BEGIN_SRC sh
+git clone https://github.com/Payphone/pomo.git
+mv pomo ~/.stumpwm.d/modules/
+#+END_SRC
+
+Now update your .stumpwmrc file to include the following:
+#+BEGIN_SRC common-lisp
+(load-module "dictionary")
+(setf dictionary:*api-key* "[YOUR KEY]")
+(define-key *root-map* (kbd "d") "get-definition")
+#+END_SRC
+There aren't any key bindings by default, so you can either add some or just
+execute commands with colon (C-t ;).
+
+** Usage
+The commands should be pretty self-explanatory.
+Commands:
+- pomo-start
+- pomo-break
+- pomo-stop
+- pomo-reset
+
+The only things you'll probably want to change are the lengths of time for
+breaks and work. You can do this easily by adjusting the variables
+\*short-break\*, \*long-break\*, and \*work-period\*, they default to 5, 15, and
+25 respectively.
+.stumpwmrc
+#+BEGIN_SRC common-lisp
+(setf pomo:*short-break* 3)
+(setf pomo:*long-break* 10)
+(setf pomo:*work-time* 30)
+#+END_SRC
