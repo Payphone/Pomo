@@ -29,8 +29,8 @@ Commands:
 
 The only things you'll probably want to change are the lengths of time for
 breaks and work. You can do this easily by adjusting the variables
-\*short-break\*, \*long-break\*, and \*work-period\*, they default to 5, 15, and
-25 respectively.
+\ast{}short-break\ast{}, \ast{}long-break\ast{}, and \ast{}work-period\ast{},
+they default to 5, 15, and 25 respectively.
 .stumpwmrc
 #+BEGIN_SRC common-lisp
 (setf pomo:*short-break* 3)
