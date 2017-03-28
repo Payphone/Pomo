@@ -1,7 +1,7 @@
 ;;;; pomo.asd
 
 (asdf:defsystem #:pomo
-  :description "A Pomodoro StumpWM module."
+  :description "A StumpWM module for keeping track of Pomodoro sessions."
   :author "Peyton Farrar <peyton@peytonfarrar.com>"
   :license "MIT"
   :depends-on (#:stumpwm #:trivial-timers)

@@ -6,8 +6,8 @@ Clone the repository and move it to your StumpWM modules folder. The modules
 folder has changed several times throughout the StumpWM releases, so the best
 way to find it is to eval `*module-dir*` in StumpWM (C-t :).
 #+BEGIN_SRC sh
-git clone https://github.com/Payphone/pomo.git
-mv pomo ~/.stumpwm.d/modules/
+git clone https://github.com/Payphone/Pomo.git
+mv Pomo ~/.stumpwm.d/modules/
 #+END_SRC
 
 Now update your .stumpwmrc file to include the following:
